@@ -1,0 +1,1 @@
+console.log('File 1initialHomePage.js connected');

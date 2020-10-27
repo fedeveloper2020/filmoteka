@@ -1,0 +1,20 @@
+@import 'normalize.scss';
+
+@import './helpers/fonts.scss';
+@import './helpers/variables.scss';
+@import './helpers/mixins.scss';
+@import './helpers/placeholders.scss';
+@import './helpers/visually-hidden.scss';
+
+@import 'base.scss';
+
+@import 'header.scss';
+@import 'homePage.scss';
+@import 'myFilmLibraryPage.scss';
+@import 'detailsPage.scss';
+@import 'footer.scss';
+
+.main {
+  font-style: 50px;
+  color: gold;
+}

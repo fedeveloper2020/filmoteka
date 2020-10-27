@@ -1,0 +1,59 @@
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin font($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin background($url, $repeat: no-repeat, $position: top center, $size: cover) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+@mixin flex($justify-content: null, $align-items: null, $flex-wrap: wrap, $flex-direction: row) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
+  flex-direction: $flex-direction;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $ease: linear) {
+  transition: $property $duration $ease;
+}
+
+@mixin font-two-values($fs, $lh) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin rectangle($w, $h) {
+  width: $w;
+  height: $h;
+}
