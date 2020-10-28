@@ -12,11 +12,54 @@
   </head>
 
   <body>
-    //= ./html/header.html
-    //= ./html/main.html
-    //= ./html/footer.html
-    <!-- Сюда будет всталена ссылка на файл скриптов -->
-    <!-- inject:js -->
-    <!-- endinject -->
+    <body>
+  <!-- ! HEADER Юрьєв-->
+  <header class="header">
+    <div class="container">
+      <nav class="navigation header__navigation">
+        
+        <a class="link site-logo" href="#">
+          <p class="logo-desc logo-desc__hidden">Filmoteka</p></a>
+        <ul class="list site-menu site-menu--header">
+          <li class="site-menu__item">
+            <a class="link site-menu__link" href="#">Home</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="link site-menu__link" href="#">My library</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- homePage.html     Осадчий    Онисько -->
+    <div class="homePage">
+      <form class="search-form js-search-form" id="search-form">
+        <input type="text" name="query" autocomplete="off" placeholder="Write movie name and click Enter" />
+      </form>
+      <ul class="movie-gallery js-movie-gallery">
+        <!-- Список <li> з карточками фільмів -->
+      </ul>
+      <!-- Блок кнопок та номера сторінки -->
+    </div>
+    <!-- myFilmLibraryPage.html     Андрущенко -->
+    <!-- Кнопки/таби - wached та queue -->
+    <!-- Список wached <li> з карточками фільмів -->
+    <!-- Список queue <li> з карточками фільмів -->
+    <!-- detailsPage.html     Таран -->
+    <!-- Розмітка даних фільму (фото, назва, голоси, оцінка і т.д) -->
+    <!-- Блок з 4х кнопок: 
+      - додати / видалити переглянуті
+      - додати / видалити в чергу на перегляд -->
+  </main>
+  <!-- ! FOOTER -->
+  <footer class="footer container">
+    <div class="footer__info">
+      <span> Made by Gruop 6 </span>
+      <a href="#">Codeman</a>
+    </div>
+      <!-- Кнопка наверх -->
+  </footer>
+</body>
   </body>
 </html>

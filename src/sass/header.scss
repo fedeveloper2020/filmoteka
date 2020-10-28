@@ -1,4 +1,138 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header {
-  font-style: 27px;
-  color: orange;
+  background-color: #77c1bb;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 18px;
+  height: 66px;
+}
+
+.site-logo {
+  position: relative;
+
+  &::before {
+    transform: translate(-100%, 30%);
+    position: absolute;
+    content: '';
+    background-image: url(../images/logo.png);
+    width: 23px;
+    height: 19px;
+    margin-left: 36px;
+  }
+}
+
+.logo-desc {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #372c48;
+}
+
+.site-menu--header {
+  display: flex;
+}
+
+.site-menu__item:first-of-type {
+  padding-right: 40px;
+}
+
+.site-menu__item:last-of-type {
+  padding-right: 20px;
+}
+
+.site-menu__item::after {
+  margin-top: 12px;
+  visibility: hidden;
+  content: '';
+  display: table;
+  transform: translate(-35%);
+  width: 122px;
+  height: 2px;
+  background-color: #372c48;
+  position: absolute;
+}
+
+.site-menu__item:last-of-type::after {
+  transform: translate(-20%);
+}
+
+.site-menu__item:hover::after {
+  visibility: visible;
+  content: '';
+  display: table;
+  width: 122px;
+  height: 2px;
+  background-color: #372c48;
+}
+
+.site-menu__link {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  font-family: 'Myriad Pro';
+  color: #4d6671;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #372c48;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-desc__hidden {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .site-logo::before {
+    transform: translate(-136px, 20%);
+  }
+
+  .logo-desc {
+    position: relative;
+    left: -66px;
+  }
+
+  .site-menu--header {
+    margin-right: -120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-logo::before {
+    transform: translate(-286px, 20%);
+  }
+
+  .logo-desc {
+    position: relative;
+    left: -206px;
+  }
+
+  .site-menu--header {
+    margin-right: -260px;
+  }
 }
