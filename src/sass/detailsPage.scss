@@ -1,0 +1,166 @@
+.container {
+  font-family: 'Roboto';
+  font-weight: 500;
+  width: 276px;
+  margin: 0 auto;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 94px;
+}
+
+.back-button,
+.details__watched,
+.details__queue {
+  font-size: 10px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin-bottom: 10px;
+  &:hover {
+    background-color: #ff6b08;
+    border: 1px solid #ff6b08;
+    color: #fff;
+  }
+}
+.details {
+  padding: 20px 0 20px;
+  display: flex;
+
+  &-img {
+    height: auto;
+  }
+
+  &__img-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    height: 420px;
+    border-radius: 10px;
+  }
+
+  &__titile {
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: rgb(55, 44, 72);
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__rating {
+    display: flex;
+  }
+
+  &__text {
+    margin-bottom: 22px;
+    font-weight: 400;
+    color: rgba(55, 44, 72, 0.541);
+    font-family: 'Roboto';
+    font-size: 14px;
+  }
+
+ 
+}
+
+.details-list {
+  font-family: 'Roboto';
+  color: rgba(55, 44, 72, 0.541);
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 24px;
+
+  &__item {
+    display: flex;
+    padding: 6px 0px 4px 10px;
+
+    &:nth-child(odd) {
+      background-color: #77c1bb;
+    }
+  }
+
+  &__name {
+    min-width: 120px;
+  }
+
+  &__about {
+    color: rgb(55, 44, 72);
+    line-height: 1.2;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+
+  &__rating {
+    margin-right: 6px;
+    margin-left: 6px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 710px;
+  }
+
+  .button-container {
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px;
+  }
+
+  .back-button,
+  .details__watched,
+  .details__queue {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .details {
+    padding-bottom: 24px;
+
+    &__img-wrapper {
+      margin: 0 20px 0;
+    }
+
+    &-img {
+      width: 350px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 910px;
+  }
+  .details {
+    &__img-wrapper {
+      margin-right: 34px;
+    }
+
+    &-img {
+      width: 420px;
+    }
+  }
+}
+
+.pane {
+  display: none;
+}
+
+.pane--active {
+  display: block;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Filmoteka</title>
+  <link rel="shortcut icon" href="./images/ico/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<header class="header">
+  <div class="header__container">
+    <h1 id="js-logotype" class="logotype">
+      <a class="header__link" href="#">
+        <img class="header__logotype" src="./images/logo.png" alt="logotype">
+        <p class="header__title">Filmoteka</p>
+      </a>
+    </h1>
+    <nav class="nav-header">
+      <ul class="header__nav">
+        <li><a id="js-link-homepage" class="header__nav-item und"
+            href="#">Home</a></li>
+        <li><a id="js-link-library" class="header__nav-link" href="#">My
+            library</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+      <main>
+         
+    <div class="homepage-section">
+        <div class="homePage homePage-js">
+      <form class="homePage__search-form js-search-form" id="search-form">
+        <div class="homePage__input-container">
+          <svg class="homePage__icon">
+        <use href="images/ico/homePage.svg#icon-search-solid"></use>
+      </svg>
+        <input class="homePage__input input-js" type="text" name="query" placeholder="Write movie name and click Enter" />
+        </div>
+      </form>
+    </div>
+    <p class="error-message"></p>
+    <h2 class="title">Most popular movies</h2>
+      <ul class="homePage__movieList js-movieList"></ul>
+      <div class="homePage__button">
+        <button class="homePage__btn" data-action="prev">Prev</button>
+        <span class="homePage__btn homePage__value">1</span>
+        <button class="homePage__btn homePage__btn--next" data-action="next">Next</button>
+      </div>
+    </div>
+
+    <section class="library-section" id="library-section">
+    <div class="library-button-container">
+        <button id="js-buttonWatched" class="btn libraryPage__btn libraryPage__btn--watch libraryPage__btn--active">Watched</button>
+        <button id="js-buttonQueue" class="btn libraryPage__btn libraryPage__btn--queue">Queue</button>
+    </div>
+    <ul class="libraryPage-list library__filmList library__list--watched">
+    </ul>
+</section>
+<section class="details">
+</section>
+  </main>
+
+   <footer class="footer">
+    <div class="footer__info container">
+      <p class="foot-desc"> Made by <a href="#">"Codeman"</a> </p>
+      <div class="btn-up"><span class="arrow"></span></div>
+    </div>
+      
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+.library-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  box-shadow: 0px 5px 9px 1px rgba(0, 0, 0, 0.23);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.libraryPage__btn {
+  width: 43.75%;
+  color: aqua;
+  background: none;
+  border: none;
+  padding: 12px;
+  color: #101010;
+
+  &--active {
+    background: #77c1bb;
+    color: #f3f6f6;
+  }
+}
+
+.libraryPage {
+  &__vote {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    border-radius: 22px;
+    padding: 12px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  &__movieName {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: #f3f6f6;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', serif;
+  }
+
+  &-list {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__filmItem {
+    cursor: pointer;
+    position: relative;
+    height: 156px;
+    margin: 0 auto 20px;
+  }
+
+  &__img {
+    border-radius: 10px;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .libraryPage {
+    &__filmItem {
+      cursor: pointer;
+      position: relative;
+      height: 156px;
+      margin: 0 auto 40px;
+    }
+    &__filmItem {
+      cursor: pointer;
+      position: relative;
+      height: 186px;
+      margin: 0 0 10px 20px;
+      width: 330px;
+    }
+    &__img {
+      min-width: 330px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .libraryPage-list {
+    margin: 30px 0 0 30px;
+  }
+
+  .library__btn {
+    width: 300px;
+  }
+
+  .libraryPage {
+    &__img {
+      min-width: 470px;
+      height: 244px;
+    }
+    &__filmItem {
+      cursor: pointer;
+      position: relative;
+      height: 250px;
+      margin: 0 10px 0px;
+      width: 470px;
+    }
+  }
+}

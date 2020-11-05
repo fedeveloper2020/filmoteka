@@ -1,0 +1,123 @@
+.header {
+  background-color: #77c1bb;
+  position: relative;
+
+  &__container {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__logotype {
+    width: 25px;
+    height: 24px;
+    margin-left: 16px;
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #372c48;
+    font-weight: 900;
+    text-transform: capitalize;
+    display: none;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    &-link {
+      margin-right: 20px;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #372c48;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 3px solid #77c1bb;
+
+    }
+
+    &-item {
+      text-decoration: none;
+      margin-right: 40px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #372c48;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 3px solid #77c1bb;
+
+      :first-child {
+        margin-right: 48px;
+      }
+    }
+  }
+}
+
+.nav-header {
+  min-width: 150px;
+}
+
+.und::after {
+  visibility: visible;
+  text-decoration: none;
+  margin-top: 12px;
+  content: '';
+  display: table;
+  transform: translate(-30%);
+  width: 132px;
+  height: 2px;
+  background-color: #372c48;
+  position: absolute;
+}
+.und1::after {
+  visibility: visible;
+  text-decoration: none;
+  margin-top: 12px;
+  content: '';
+  display: table;
+  transform: translate(-10%);
+  width: 132px;
+  height: 2px;
+  background-color: #372c48;
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    width: 760px;
+    padding: 10px 0;
+
+    .logotype {
+      margin-left: 30px;
+    }
+
+    .header__title {
+      display: block;
+      margin-left: 16px;
+    }
+
+    .header__nav {
+      margin-right: 46px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .header__container {
+    width: 980px;
+    padding: 15px 0;
+  }
+}

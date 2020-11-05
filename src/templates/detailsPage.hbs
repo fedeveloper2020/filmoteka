@@ -1,0 +1,46 @@
+<section class="details">
+    <div class="container">
+        <div class="details__img-wrapper">
+            <img src="https://image.tmdb.org/t/p/w500/{{poster_path}}" alt="poster">
+        </div>
+        <div class="details__description">
+            <h2 class="details__titile">{{title}} ({{year}})</h2>
+            <ul class="details-list">
+                <li class="details-list__item">
+                    <p class="details-list__name">vote / votes</p>
+                    <p class="details-list__desc details__rating">
+                        <span class="details-list__rating">{{vote_average}}</span>
+                        <span class="details-list__rating--dash"> / </span>
+                        <span class="details-list__rating">{{vote_count}}</span>
+                    </p>
+                </li>
+                <li class="details-list__item">
+                    <p class="details-list__name">popularity</p>
+                    <p class="details-list__desc">{{popularity}}</p>
+                </li>
+                <li class="details-list__item">
+                    <p class="details-list__name">original title</p>
+                    <p class="details-list__desc">{{original_title}}</p>
+                </li>
+                <li class="details-list__item">
+                    <p class="details-list__name">genre</p>
+                    <p class="details-list__desc">
+                        {{#each genre}}
+                        <span class="card-item__genre">{{name}}</span>
+                        {{/each}}
+                    </p>
+                </li>
+            </ul>
+            <h3 class="details-list__about">About</h3>
+            <p class="details__text">{{overview}}</p>
+            <svg class="details__icon">
+                <use href="images/ico/details.svg#icon-video-solid"></use>
+            </svg>
+            <button class="details__watched">Add to watched</button>
+            <svg class="details__icon">
+                <use href="images/ico/details.svg#icon-calendar"></use>
+            </svg>
+            <button class="details__queue">Add to queue</button>
+        </div>
+    </div>
+</section>

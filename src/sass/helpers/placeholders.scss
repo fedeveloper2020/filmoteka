@@ -1,0 +1,32 @@
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+%absolute-center {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+%pseudo {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+%line {
+  content: "";
+  display: block;
+  background-color: $primary-color;
+  width: 25px;
+  height: 2px;
+}
+
+%arrows {
+  cursor: pointer;
+  background: transparent;
+  width: 20px;
+  height: 11px;
+  border: none;
+}
